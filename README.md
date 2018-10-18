@@ -1,7 +1,7 @@
 type-check-of
 ==========
 
-complete type checking for node and browser
+complete type checking for browser and node 
 
 dependencies:
 
