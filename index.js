@@ -40,13 +40,13 @@ export {
   isUndefined, 
   isWeakMap, 
   isWeakSet 
-} from 'lodash';
+} from 'lodash/lang';
 
 export { 
   int as isInt,
-  int32 as isInt32,
   long as islong,
   Long as isLong,
+  int32 as isInt32,
   double as isDouble,
   primitive as isPrimitive,
 } from 'is-type-of';
@@ -58,7 +58,69 @@ export { default as isGeneratorFunction } from 'is-generator-function';
 
 export { 
   default as isStream,
+  duplexStream as isDuplexStream,
   readableStream as isReadableStream, 
-  writableStream as isWritableStream, 
-  duplexStream as isDuplexStream
+  writableStream as isWritableStream
 } from 'isstream';
+
+/**
+ * Get type of `value`.
+ *
+ * @since 0.1.2
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {string} Returns `type` of `value`
+ * @example
+ *
+ * getType('str')
+ * // => 'string'
+ *
+ * getType([])
+ * // => 'array'
+ */
+function getType(value) {
+  // ToDo
+}
+
+/**
+ * Checks type `value1` and `value2`.
+ *
+ * @since 0.1.2
+ * @category Lang
+ * @param {*} value1 The value to check.
+ * * @param {*} value2 The value to check.
+ * @returns {boolean} Returns `true` if `value` is same, else `false`.
+ * @example
+ *
+ * isSameType(null, null)
+ * // => true
+ *
+ * isSameType(void 0, null)
+ * // => false
+ */
+function isSameType(value1, value2) {
+  // ToDo
+}
+
+/**
+ * Checks type.
+ *
+ * @since 0.1.2
+ * @category Lang
+ * @param {*} value The value to check.
+ * * @param {string} type The value to check.
+ * @returns {boolean} Returns `true` if `value` is `type`, else `false`.
+ * @example
+ *
+ * isType(null, 'null')
+ * // => true
+ *
+ * isType(void 0, 'null')
+ * // => false
+ */
+function isType(value, type) {
+  if (typeof type !== 'string') {
+    return false;
+  }
+  // ToDo
+}

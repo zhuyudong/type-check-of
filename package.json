@@ -1,6 +1,6 @@
 {
   "name": "type-check-of",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "complete type checking for browser and node",
   "main": "index.js",
   "scripts": {
