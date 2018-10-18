@@ -9,9 +9,7 @@
   isGeneratorFunction = isGeneratorFunction && isGeneratorFunction.hasOwnProperty('default') ? isGeneratorFunction['default'] : isGeneratorFunction;
   var isstream__default = 'default' in isstream ? isstream['default'] : isstream;
 
-  // Object.keys(utils).map(function (name) {
-  //   exports[transform(name)] = utils[name];
-  // });
+
 
   exports.isAbsolute = lodash.isAbsolute;
   exports.isArguments = lodash.isArguments;
